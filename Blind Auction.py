@@ -24,9 +24,9 @@ while end_of_loop == False:
   name = input('What is your name?\n')
   bid_amount = int(input('What is your bid?\n$'))
   bidding[name] = bid_amount
-  keep_going = input("Are there any other bidders? Type 'yes' or 'no'").lower()
+  should_continue = input("Are there any other bidders? Type 'yes' or 'no'").lower()
   os.system('clear')
-  if keep_going == 'no':
+  if should_continue == 'no':
     end_of_loop = True
 
 highest_bidder = ''
